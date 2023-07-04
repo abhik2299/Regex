@@ -26,7 +26,7 @@ public class RegexAssignment1 {
 
         System.out.println("Enter a valid email");
         String str3= sc.nextLine();
-        boolean bool3=Pattern.matches("[a-zA-Z]{1,}[.]{0,1}[a-zA-Z0-9]{0,}[@]{1}[a-zA-Z0-9]{1,}[.]{1}[a-z]{2,}[.]{0,1}[a-z]{0,}",str3);
+        boolean bool3=Pattern.matches("[a-zA-Z]{1,}[.]{0,1}[-]{0,1}[+]{0,1}[a-zA-Z0-9]{0,}[@]{1}[a-zA-Z0-9]{1,}[.]{1}[a-z]{2,}[.]{0,1}[a-z]{0,}[,]{0,1}",str3);
         if(bool3==true)
             System.out.println("Valid e-mail");
         else
